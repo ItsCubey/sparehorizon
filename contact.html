@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us | Your Hosting</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    :root {
+      --main-color: #00c2ff;
+      --bg-dark: #0e0e2c;
+      --text-light: #ccc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg-dark);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      text-align: center;
+      animation: fadeIn 1s ease;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: var(--text-light);
+      margin-bottom: 2rem;
+    }
+
+    .discord-box {
+      background: #1f1f4a;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 194, 255, 0.2);
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .discord-box i {
+      font-size: 3rem;
+      color: #7289da;
+      margin-bottom: 1rem;
+    }
+
+    .discord-box a {
+      display: inline-block;
+      margin-top: 1rem;
+      background: var(--main-color);
+      color: white;
+      padding: 0.6rem 1.5rem;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: background 0.3s ease;
+    }
+
+    .discord-box a:hover {
+      background: #00aadd;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      .discord-box {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Contact Us</h1>
+  <p>Need help? Reach out to us through Discord!</p>
+
+  <div class="discord-box">
+    <i class="fab fa-discord"></i>
+    <h2>Join Our Discord Server</h2>
+    <p>Chat with support and get help instantly.</p>
+    <a href="https://discord.gg/YOUR_INVITE_LINK" target="_blank">Join Discord</a>
+  </div>
+
+</body>
+</html>

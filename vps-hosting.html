@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VPS Hosting | Your Hosting</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    :root {
+      --main-color: #00c2ff;
+      --accent-color: #ff00cc;
+      --bg-dark: #0e0e2c;
+      --bg-light: #1f1f4a;
+      --text-light: #ccc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg-dark);
+      color: white;
+    }
+
+    header {
+      background: #151540;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      height: 45px;
+    }
+
+    nav {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--main-color);
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: linear-gradient(145deg, #0e0e2c, #1a1a40);
+      animation: fadeIn 1s ease;
+    }
+
+    .hero h1 {
+      font-size: 2.7rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: var(--text-light);
+    }
+
+    .plans {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 3rem 2rem;
+      animation: slideUp 1s ease;
+    }
+
+    .plan {
+      background: var(--bg-light);
+      padding: 2rem;
+      width: 300px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .plan:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(0, 194, 255, 0.4);
+    }
+
+    .plan h3 {
+      color: var(--accent-color);
+      margin-bottom: 0.5rem;
+    }
+
+    .plan p {
+      color: var(--text-light);
+      margin: 0.3rem 0;
+    }
+
+    .price {
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin: 1rem 0;
+    }
+
+    .btn {
+      background: var(--main-color);
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #00a3e0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #101030;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        justify-content: center;
+        margin-top: 1rem;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .plan {
+        width: 90%;
+      }
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Hosting Logo" class="logo" />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="minecraft-hosting.html">Minecraft Hosting</a>
+      <a href="vps-hosting.html">VPS</a>
+      <a href="#">Game Servers</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Powerful & Scalable VPS Hosting</h1>
+    <p>Flexible, fast, and secure VPS plans to meet your every need.</p>
+  </section>
+
+  <section class="plans">
+    <div class="plan">
+      <h3>VPS Basic</h3>
+      <p>1 vCPU</p>
+      <p>2GB RAM</p>
+      <p>20GB SSD</p>
+      <p>1TB Bandwidth</p>
+      <p class="price">$4.99 / month</p>
+      <a href="billing.html" class="btn">Buy Now</a>
+    </div>
+    <div class="plan">
+      <h3>VPS Pro</h3>
+      <p>2 vCPU</p>
+      <p>4GB RAM</p>
+      <p>40GB SSD</p>
+      <p>2TB Bandwidth</p>
+      <p class="price">$9.99 / month</p>
+      <a href="billing.html" class="btn">Buy Now</a>
+    </div>
+    <div class="plan">
+      <h3>VPS Ultra</h3>
+      <p>4 vCPU</p>
+      <p>8GB RAM</p>
+      <p>80GB SSD</p>
+      <p>5TB Bandwidth</p>
+      <p class="price">$19.99 / month</p>
+      <a href="billing.html" class="btn">Buy Now</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Your Hosting. All rights reserved.
+  </footer>
+
+</body>
+</html>

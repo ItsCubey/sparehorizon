@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Billing | Your Hosting</title>
+  <style>
+    :root {
+      --main-color: #00c2ff;
+      --bg-dark: #0e0e2c;
+      --text-light: #ccc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg-dark);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      padding: 2rem;
+      animation: fadeIn 1s ease;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: var(--text-light);
+      margin-bottom: 2rem;
+    }
+
+    .discord-btn {
+      background: var(--main-color);
+      color: white;
+      padding: 0.8rem 2rem;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+      box-shadow: 0 0 10px rgba(0, 194, 255, 0.3);
+    }
+
+    .discord-btn:hover {
+      background: #00aadd;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .discord-btn {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Make a Ticket in Our Discord Server To Buy.</h1>
+  <p>Click below Enter our Discord server and Go to Ticket Channel, Click Open Ticket and Describe Which Plan You Want We Will Reach you Out within 24 hours Be Paitent.</p>
+
+  <a class="discord-btn" href="https://discord.gg/YOUR_INVITE_LINK" target="_blank">
+    Buy from Discord
+  </a>
+</body>
+</html>
